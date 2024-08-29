@@ -46,7 +46,7 @@ export default function App() {
             setInputMessage('');
 
             try {
-                const response = await fetch('http://localhost:8000/realQuestion/', {
+                const response = await fetch('https://00ec-73-231-3-109.ngrok-free.app/realQuestion/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ export default function App() {
         formData.append('file', file);
 
         try {
-            const response = await fetch('http://localhost:8000/upload_file/', {
+            const response = await fetch('https://00ec-73-231-3-109.ngrok-free.app/upload_file/', {
                 method: 'POST',
                 body: formData,
             });
